@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Etiquetas meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Normalizacion de navegadores -->
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!-- Links con google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link con bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <!-- Link con archivo CSS  -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Link con archivo JS -->
+    <script src="js/script.js" defer></script>
+
+    <!-- Link con Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/11614eb144.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Andromeda</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="barra_nav">
+        <div class="conjunto_logo">
+          <img
+            src="assets/Imagenes/Anillo.png"
+            alt="Logo Andromeda"
+            class="logo_img"
+          />
+          <label class="logo"><a href="index.html"></a> Andromeda</label>
+        </div>
+        <ul class="art_nav" id="art_nav">
+          <li><a href="index.html" class="enlace_nav">Inicio</a></li>
+          <li><a href="index-catalogo.html" class="enlace_nav">Relojes</a></li>
+          <li><a href="index-catalogo.html" class="enlace_nav">Anillos</a></li>
+          <li>
+            <a href="index-catalogo.html" class="enlace_nav">Pulseras</a>
+          </li>
+          <li><a href="index-catalogo.html" class="enlace_nav">Aritos</a></li>
+          <li>
+            <a href="index-catalogo.html" class="enlace_nav">Contactos</a>
+          </li>
+        </ul>
+        <span class="btn_menu"><i class="fa fa-bars"></i></span>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Carousel -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide div_carousel"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/Imagenes/Anillo_corousel.jfif"
+              class="d-block w-100 img-carousel"
+              alt="Anillo"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/Imagenes/Pulsera_carousel_1.jfif"
+              class="d-block w-100 img-carousel"
+              alt="Pulsera"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/Imagenes/Reloj_corousel.jfif"
+              class="d-block w-100 img-carousel"
+              alt="Reloj"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Quienes somos -->
+      <div class="intro">
+        <h2>¿Quíenes somos?</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sint
+          voluptate tenetur ducimus, culpa corporis quasi necessitatibus,
+          commodi at odio asperiores labore error ipsam aspernatur! Laborum
+          eaque debitis atque temporibus!
+        </p>
+      </div>
+
+      <!-- Enlace a Instagram -->
+      <div class="enlace_ig">
+        <img src="assets/Imagenes/ig_logo.png" alt="Logo Instagram" />
+        <a href="#"> @Alejo_Perin2003 </a>
+      </div>
+
+      
+    </main>
+
+    <footer class="footer">
+      <div class="div_redes">
+        <ul class="redes_sociales">
+          <li>
+            <a
+              href="https://www.facebook.com/alejo.perin"
+              class="enlace_redes"
+              target="_blank"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/alejo_perin2003/?hl=en"
+              class="enlace_redes"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://api.whatsapp.com/send?phone=5491136426032"
+              class="enlace_redes"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:alejoperin11@gmail.com?Subject=Interesado%20en%20Andromeda%20Joyeria"
+              class="enlace_redes"
+              target="_blank"
+            >
+              <i class="far fa-envelope-open"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <span class="contactos">Contactos del creador de la pagina web</span>
+      <span class="copy">
+        &copy; 2021. Todos los derechos reservados - Alejo Perin - Buenos Aires
+        - Argentina
+      </span>
+    </footer>
+
+    <!--Codigo de enlace con bootstrap y jquery -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

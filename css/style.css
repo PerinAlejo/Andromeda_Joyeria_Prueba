@@ -1,0 +1,394 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+main{
+  height: 88vh;
+}
+
+@media screen and (max-width:858px) {
+  main{
+    height: initial;
+  }
+  
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+    background-color: #414141;
+  }
+/* barra de navegacion */
+.barra_nav {
+  position: fixed;
+  font-family: "Courgette", cursive;
+  background: black;
+  height: 75px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.conjunto_logo {
+  padding: 0 10px;
+}
+
+.logo {
+  margin-top: 6px;
+  font-size: 35px;
+  color: #fff;
+}
+
+.logo_img {
+  margin-top: -25px;
+  width: 70px;
+  height: 70px;
+}
+
+.art_nav {
+  display: flex;
+  list-style: none;
+  margin-right: 30px;
+  margin-top: 22px;
+  z-index: 1000;
+}
+
+.art_nav li {
+  border-radius: 3px;
+  margin: 0 5px;
+}
+
+.enlace_nav {
+  padding: 7px 13px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  color: #fff;
+  top: 100px;
+}
+
+.enlace_nav:hover {
+  color: gold;
+}
+
+.btn_menu {
+  margin-right: 30px;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+ul.show {
+  top: 65px;
+}
+
+@media screen and (max-width: 960px) {
+  .conjunto_logo {
+    padding-left: 0px;
+  }
+  .logo {
+    font-size: 30px;
+  }
+  .logo_img {
+    height: 60px;
+    width: 60px;
+  }
+  .art_nav {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 858px) {
+  .barra_nav {
+    height: 65px;
+  }
+  .btn_menu {
+    display: inline-flex;
+  }
+  .art_nav {
+    position: fixed;
+    width: 100vw;
+    height: calc(100% - 65px);
+    background-color: #414141;
+    top: -100vh;
+    text-align: center;
+    transition: all 0.4s;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .art_nav li {
+    margin: 30px 0 0 0;
+    line-height: 30px;
+  }
+  .enlace_nav {
+    font-size: 20px;
+    margin-left: -35px;
+  }
+  .enlace_nav:hover {
+    background-color: gray;
+    transition: 0.4s;
+  }
+  .conjunto_logo {
+    padding-left: 35px;
+  }
+  .logo {
+    font-size: 25px;
+  }
+  .logo_img {
+    margin-top: -20px;
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 858px) and (orientation: landscape) {
+  .art_nav li {
+    margin: 5px 0 0 0;
+  }
+  .art_nav {
+    overflow: scroll;
+    height: calc(100% - 65px);
+  }
+}
+
+/* Edicion de Scrollbar */
+
+.art_nav::-webkit-scrollbar {
+  width: 0px;
+  background-color: #414141;
+}
+
+/* Enlace a Instagram */
+.enlace_ig{
+  position: absolute;
+  margin-top:calc(25vh + 75px);
+  right:50px;
+  align-items: center;
+  
+}
+
+.enlace_ig a{
+  font-family: "Courgette", cursive;
+  text-decoration:none;
+  color: black;
+  font-size: 2.25vw;
+  
+}
+
+.enlace_ig img{
+  margin-top: -10px;
+  width: 6.5vw;
+  height: 6.5vw;
+}
+
+@media screen and (max-width:1050px) {
+  .enlace_ig{
+    margin: 420px 45px;
+    width: 300px;
+    right: initial;
+  } 
+  .enlace_ig img{
+    margin-top: -10px;
+    width: 70px;
+    height: 70px;
+  }
+  .enlace_ig a{
+    font-size: 25px;
+  }
+  
+}
+
+@media screen and (max-width:858px) {
+  .enlace_ig{
+    position: relative;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+    margin-top:150px;
+    margin-bottom:135px;
+    margin-left: 0;
+  } 
+}
+
+/* ¿Quienes somos? */
+.intro{
+  position: absolute;
+  max-width: 275px;
+  text-align: center;
+  margin: 165px 50px;
+}
+
+.intro h2{
+  font-family: "Courgette", cursive;
+  font-weight: bold;
+  font-size: 2.5vw;
+}
+
+.intro p{
+  color: black;
+  font-size: 1.25vw;
+}
+
+@media screen and (max-width:1100px) {
+  .intro{
+    margin-left: 25px;
+    max-width: 250px;
+  } 
+}
+
+@media screen and (max-width:1050px) {
+  .intro{
+    margin-top: 155px;
+    margin-left: 40px;
+    max-width: 300px;
+  } 
+  .intro h2{
+    font-size: 30px;
+  }
+  .intro p{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width:858px) {
+  .intro{
+    position: relative;
+    margin: initial;
+    top: 200px;
+    width: 100%;
+    max-width: initial;
+    padding: 0 75px;
+    right: initial;
+    text-align: center;
+  } 
+}
+/* Estilo Carousel */
+
+.img-carousel {
+  height: 23vw;
+  width: 38vw;
+  object-fit: cover;
+  border: 3px solid black;
+  border-radius: 30px;
+}
+
+.div_carousel {
+  position: absolute;
+  display: block;
+  height: 23vw;
+  width: 38vw;
+  margin: 115px 30%;
+  
+}
+
+@media screen and (max-width:1050px) {
+  .div_carousel{
+    margin:115px 45%;
+    height: 250px;
+    width: 450px;
+  }
+  .img-carousel{
+    height: 250px;
+    width: 450px;
+  }
+}
+
+@media screen and (max-width:858px) {
+  .div_carousel{
+    position: relative;
+    top: 100px;
+    height: 40vw;
+    width: 70vw;
+    max-width:455px;
+    max-height: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: initial;
+    margin-bottom: initial;
+    
+  } 
+  .img-carousel{
+    height: 40vw;
+    width: 70vw;
+    max-width:455px;
+    max-height: 260px;
+  } 
+}
+
+/* Estilo footer */
+
+.footer {
+  font-family: "Courgette", cursive;
+  position: absolute;
+  background: black;
+  height: 75px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #fff;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.div_redes{
+    padding: 0;
+}
+
+.redes_sociales {
+  list-style: none;
+  display: flex;
+}
+
+.redes_sociales li {
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.enlace_redes {
+  padding: 7px 13px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  color: #fff;
+}
+
+.enlace_redes:hover{
+    color: gold;
+}
+
+.copy {
+  margin-right: 20px;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 858px){
+    .footer{
+        flex-direction: column;
+        height: 175px;
+    }
+    .redes_sociales li {
+        padding: 10px;
+        margin-bottom: -20px;
+      }
+    .redes_sociales {
+        margin-left: -40px;
+    }
+    .copy  {
+        margin-bottom: 10px;
+    }
+    .contactos{
+        margin-bottom: 10px;
+    }
+}
