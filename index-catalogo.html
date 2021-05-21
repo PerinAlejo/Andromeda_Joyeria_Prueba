@@ -1,22 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!-- Etiquetas meta -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Catálogo</title>
 
+    <!-- Normalizacion de navegadores -->
     <link rel="stylesheet" href="css/normalize.css" />
+
+    <!-- Links con google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Link con archivo CSS  -->
+    <link rel="stylesheet" href="css/style-heder-sin-bootstrap.css" />
+    <link rel="stylesheet" href="css/style-footer.css" />
     <link rel="stylesheet" href="css/style-catalogo.css" />
-    
+
+    <!-- Link con archivo JS -->
+    <script src="js/script.js" defer></script>
+
+    <!-- Link con Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/11614eb144.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Catálogo</title>
   </head>
 
   <body>
+    <header>
+      <nav class="barra_nav">
+        <div class="conjunto_logo">
+          <img
+            src="assets/Imagenes/Anillo.png"
+            alt="Logo Andromeda"
+            class="logo_img"
+          />
+          <label class="logo">Andromeda</label>
+        </div>
+        <ul class="art_nav" id="art_nav">
+          <li><a href="index.html" class="enlace_nav">Inicio</a></li>
+          <li>
+            <a href="#relojes" class="enlace_nav">Relojes</a>
+          </li>
+          <li><a href="#anillos" class="enlace_nav">Anillos</a></li>
+          <li>
+            <a href="#pulseras" class="enlace_nav">Pulseras</a>
+          </li>
+          <li><a href="#aritos" class="enlace_nav">Aritos</a></li>
+          <li>
+            <a href="index-catalogo.html" class="enlace_nav">Contactos</a>
+          </li>
+        </ul>
+        <span class="btn_menu"><i class="fa fa-bars"></i></span>
+      </nav>
+    </header>
+
     <main>
       <h3 class="title_producto" id="pulseras">Pulseras</h3>
       <div class="conteiner">
@@ -124,5 +169,53 @@
         </div>
       </div>
     </main>
+
+    <footer class="footer">
+      <div class="div_redes">
+        <ul class="redes_sociales">
+          <li>
+            <a
+              href="https://www.facebook.com/alejo.perin"
+              class="enlace_redes"
+              target="_blank"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/alejo_perin2003/?hl=en"
+              class="enlace_redes"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://api.whatsapp.com/send?phone=5491136426032"
+              class="enlace_redes"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:alejoperin11@gmail.com?Subject=Interesado%20en%20Andromeda%20Joyeria"
+              class="enlace_redes"
+              target="_blank"
+            >
+              <i class="far fa-envelope-open"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <span class="contactos">Contactos del creador de la pagina web</span>
+      <span class="copy">
+        &copy; 2021. Todos los derechos reservados - Alejo Perin - Buenos Aires
+        - Argentina
+      </span>
+    </footer>
   </body>
 </html>
