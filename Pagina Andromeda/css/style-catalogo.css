@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    letter-spacing: .03em;
+    line-height: 1.6;
+    text-align: center; 
+    top: 100px;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+    background-color: #414141;
+  }
+
+.title{
+    font-family: "Courgette", cursive;
+    position:relative;
+    margin-top: 0;
+    top: 100px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+
+.title_producto{
+    font-family: "Courgette", cursive;
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    color: #000000;
+    margin-top: 50px;
+    font-weight: 100;
+}
+
+.title_producto::after, .title_producto::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color:currentColor;
+    top: 0.8em;
+}
+
+.title_producto::before{
+    left: -140px;
+}
+
+.title_producto::after{
+    right: -140px;
+}
+
+.conteiner{
+    width: 100%;
+    max-width: 1800px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.card{
+    background-color: rgba(0, 0, 0, 0.993);
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    border: 2px rgb(0, 0, 0) solid;
+    box-shadow: 0 2px 2px  rgba(0, 0, 0, .2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all .25s;
+    color: white;
+}
+
+.card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px  rgba(0, 0, 0, .2);
+}
+
+.card img{
+    width: 330px;
+    height: 220px;
+}
+
+.card h4{
+    font-weight: 600;
+}
+
+.card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.card  a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(238, 234, 234);
+}
+
+body {
+    background-color: #ffdd90; /*define un fondo de color solido*/
+    background-image: url("/assets/Imagenes/Fondo_catalogo.jpg"); 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+   }
