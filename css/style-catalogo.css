@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 html, body{
     margin: 0;
     padding: 0;
@@ -9,6 +13,7 @@ main{
     letter-spacing: .03em;
     line-height: 1.6;
     text-align: center; 
+    top: 100px;
 }
 
 body::-webkit-scrollbar {
@@ -16,16 +21,25 @@ body::-webkit-scrollbar {
     background-color: #414141;
   }
 
-#pulseras{
-    margin-top:100px ;
+.title{
+    font-family: "Courgette", cursive;
+    position:relative;
+    margin-top: 0;
+    top: 100px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    text-decoration: underline;
 }
+
 
 .title_producto{
     font-family: "Courgette", cursive;
     position: relative;
     display: inline-block;
     font-size: 30px;
-    color: #6a6a6a;
+    color: #000000;
     margin-top: 50px;
     font-weight: 100;
 }
@@ -58,14 +72,17 @@ body::-webkit-scrollbar {
 }
 
 .card{
+    background-color: rgba(0, 0, 0, 0.993);
     width: 330px;
     height: 430px;
     border-radius: 8px;
+    border: 2px rgb(0, 0, 0) solid;
     box-shadow: 0 2px 2px  rgba(0, 0, 0, .2);
     overflow: hidden;
     margin: 20px;
     text-align: center;
     transition: all .25s;
+    color: white;
 }
 
 .card:hover{
@@ -96,6 +113,15 @@ body::-webkit-scrollbar {
     border: 2px solid #000;
     border-radius: 5px;
     padding: 10px;
-    background-color: gold;
+    background-color: rgb(238, 234, 234);
 }
 
+body {
+    background-color: #ffdd90; /*define un fondo de color solido*/
+    background-image: url("/assets/Imagenes/Fondo_catalogo.jpg"); 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+   }
