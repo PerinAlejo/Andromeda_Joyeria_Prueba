@@ -117,7 +117,7 @@ body::-webkit-scrollbar {
 }
 
 body {
-    background-image: url("/assets/Imagenes/Fondo_catalogo.jpg"); 
+    background-image: url("../assets/Imagenes/Fondo_catalogo.jpg"); 
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
