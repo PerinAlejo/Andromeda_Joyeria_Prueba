@@ -10,6 +10,7 @@
 /* barra de navegacion */
 .barra_nav {
   position: fixed;
+  top: 0%;
   font-family: "Courgette", cursive;
   background: black;
   height: 75px;

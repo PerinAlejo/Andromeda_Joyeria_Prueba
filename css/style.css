@@ -26,7 +26,7 @@ body::-webkit-scrollbar {
 /* Enlace a Instagram */
 .enlace_ig{
   position: absolute;
-  margin-top:calc(25vh + 75px);
+  margin-top:calc(25vh + 115px);
   right:50px;
   align-items: center;
   
@@ -80,7 +80,7 @@ body::-webkit-scrollbar {
   position: absolute;
   max-width: 275px;
   text-align: center;
-  margin: 165px 50px;
+  margin: 185px 50px;
 }
 
 .intro h2{
@@ -142,12 +142,12 @@ body::-webkit-scrollbar {
   display: block;
   height: 23vw;
   width: 38vw;
-  margin: 115px calc(50% - 19vw);
+  margin: 145px calc(50% - 19vw);
 }
 
 @media screen and (max-width:1050px) {
   .div_carousel{
-    margin:115px 45%;
+    margin: 135px 45%;
     height: 250px;
     width: 450px;
   }
@@ -160,7 +160,7 @@ body::-webkit-scrollbar {
 @media screen and (max-width:858px) {
   .div_carousel{
     position: relative;
-    top: 100px;
+    top: 135px;
     height: 40vw;
     width: 70vw;
     max-width:455px;
@@ -200,6 +200,18 @@ body::-webkit-scrollbar {
   box-shadow: 0 12px 16px  rgba(0, 0, 0, .2);
 }
 
+@media screen and (max-width:1300px) {
+  .catalogo{
+    top: 36vw;
+  } 
+}  
+
+@media screen and (max-width:1300px) {
+  .catalogo{
+    top: 37vw;
+  }
+}   
+
 @media screen and (max-width:1050px) {
   .catalogo{
       margin: 408px 61vw;
@@ -212,7 +224,77 @@ body::-webkit-scrollbar {
   .catalogo{
     position: relative;
     margin: 0 calc(50% - 60px);
-    top: 150px;
+    top: 170px;
   } 
 }
+
+/* Inicio de seion */
+
+.inicio_sesion{
+  font-family: "Courgette", cursive;
+  position: absolute;
+  top: 100px;
+  left: calc(50% - 128px);
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.inicio_sesion:hover{
+  color: black;
+}
+
+@media screen and (max-width:1050px) {
+  .inicio_sesion{
+    left: calc(45%  + 95px);
+  } 
+}
+
+@media screen and (max-width:850px) {
+  .inicio_sesion{
+    left: calc(50% - 128px);
+  } 
+}
+
+.Bienvenida{
+  font-family: "Courgette", cursive;
+  position: absolute;
+  top: 100px;
+  left: calc(50% - 161.8px);
+  color: black;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+@media screen and (max-width:1050px) {
+  .Bienvenida{
+    left: calc(45%  + 65px);
+  } 
+}
+
+@media screen and (max-width:850px) {
+  .Bienvenida{
+    left: calc(50% - 161.8px);
+  } 
+}
+
+.cerrar_sesion{
+  font-family: "Courgette", cursive;
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.cerrar_sesion:hover{
+  color: black;
+}
+
+.cerrar_sesion i{
+  padding-left: 8px;
+}
+
 
