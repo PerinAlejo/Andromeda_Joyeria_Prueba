@@ -48,7 +48,7 @@
             <span class="fas fa-times btn_cierre" id="btn_cierre" onclick="btn_cierre(this)"></span>
           </div>
          </div>
-      <?php session_unset(); }  ?>
+      <?php  }  ?>
 
       <script>
         function btn_cierre(alert_box){
