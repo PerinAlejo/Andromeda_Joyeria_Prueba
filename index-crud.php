@@ -48,16 +48,20 @@
             <span class="fas fa-times btn_cierre" id="btn_cierre" onclick="btn_cierre(this)"></span>
           </div>
          </div>
-      <?php  }  ?>
+         
+      <?php }  ?>
 
       <script>
         function btn_cierre(alert_box){
         alert_box.parentNode.parentNode.style.display="none"
+        <?php 
+         $_SESSION['message'] = '';
+         $_SESSION['message_type'] = 'tiempo';?>
         }
       </script>
       
       <div class="edit-container">
-        <form action="php-crud/save_product.php" method="POST">
+        <form action="php-crud/save_product.php" method="POST" enctype="multipart/form-data">
           <input
             type="text"
             name="title"
@@ -82,7 +86,8 @@
           <input 
             type="file" 
             name="img" 
-            id="file_input">
+            id="file_input"
+            required>
           <label for="file_input" class="info_producto label_file">
             <span>Añadir Imagen</span>
           </label>
@@ -118,7 +123,10 @@
                 <td><?php echo $row['description'] ?></td>
                 <td><?php echo $row['price'] ?></td>
                 <td><?php echo $row['fecha_reg'] ?></td>
-                <td></td>
+                <td><img 
+                src="php-crud/assets/Imagenes/<?php echo $row['img']?>"  
+                calss="img_producto" 
+                alt="Foto Productos"></td>
                 <td>
                   <a href="php-crud/edit.php?id=<?php echo $row['id']?>" class="icon edit">
                   <i class="fas fa-marker"></i>

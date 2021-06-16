@@ -1,3 +1,5 @@
+<?php include('php-crud/con_db_crud.php') ?>
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -43,9 +45,31 @@
     <?php include("include/header.php")?>
 
     <main>
-      <h1 class="title">Catálogo</h1>
 
-      <div id="pulseras"></div>
+      <a href="index-crud.php" class="agregar"><i class="fas fa-plus"></i></a>
+
+      <div class="conteiner">
+        <?php
+          $query = "SELECT* FROM productos";
+          $result_product = mysqli_query($conexion, $query);
+          while($row = mysqli_fetch_array($result_product)) {?>
+          
+            <div class="card">
+              <img src="php-crud/assets/Imagenes/<?php echo $row['img']?>" alt="Producto" />
+              <h4><?php echo $row['title'] ?></h4>
+              <p>
+                <?php echo $row['description'] ?> <br />
+                <?php echo $row['price'] ?>
+              </p>
+              <a href="#">Comprar Producto</a>
+            </div>
+        <?php } ?>
+      </div>
+
+
+
+      <!-- <h1 class="title">Catálogo</h1> -->
+      <!-- <div id="pulseras"></div>
       <br />
       <br />
       <h3 class="title_producto">Pulseras</h3>
@@ -155,7 +179,7 @@
           </p>
           <a href="#">Comprar Producto</a>
         </div>
-      </div>
+      </div> -->
     </main>
 
     <?php include("include/footer.php")?>

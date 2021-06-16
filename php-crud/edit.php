@@ -100,7 +100,8 @@
           <input 
             type="file" 
             name="img" 
-            id="file_input">
+            id="file_input"
+            required>
           <label for="file_input" class="info_producto label_file">
             <span>Añadir Imagen</span>
           </label>
